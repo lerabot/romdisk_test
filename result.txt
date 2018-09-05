@@ -1,0 +1,35 @@
+------ ORIGINAL ROMDISK ---------
+Opening /rd/test.png : result 3
+Opening /rd/testtest.png : result 3
+Opening /rd/this_filename_is_too_long.png : result 3
+Opening /rd/this_filename_is_too_long2.png : result 3
+------ PC PATH ---------
+Opening /pc/romdisk/test.png : result 3
+Opening /pc/romdisk/testtest.png : result 3
+Opening /pc/romdisk/this_filename_is_too_long.png : result 3
+Opening /pc/romdisk/this_filename_is_too_long2.png : result 3
+------ NEW ROMDISK ---------
+fs_iso9660: disc change detected
+Found romdisk at /pc -> size : 1087
+fs_romdisk: mounting image at 0x8c0ccac8 at /rd_2
+Romdisk mounted at /rd_2
+Opening /rd_2/test.png : result -1
+Opening /rd_2/testtest.png : result 3
+Opening /rd_2/this_filename_is_too_long.png : result -1
+Opening /rd_2/this_filename_is_too_long2.png : result -1
+Opening /rd_2/this_is_15c_.png : result 3
+Opening /rd_2/this_is_16c__.png : result -1
+------ PC PATH ---------
+Opening /pc/asset/rd_test/test.png : result 3
+Opening /pc/asset/rd_test/testtest.png : result 3
+Opening /pc/asset/rd_test/this_filename_is_too_long.png : result 3
+Opening /pc/asset/rd_test/this_filename_is_too_long2.png : result 3
+Opening /pc/asset/rd_test/this_is_15c_.png : result 3
+Opening /pc/asset/rd_test/this_is_16c__.png : result 3
+Exiting game.
+arch: shutting down kernel
+maple: final stats -- device count = 1, vbl_cntr = 99, dma_cntr = 97
+vid_set_mode: 640x480 NTSC
+fs_romdisk: unmounting image at 0x8c0ccac8 from /rd_2
+   (and also freeing its image buffer)
+fs_romdisk: unmounting image at 0x8c059178 from /rd
