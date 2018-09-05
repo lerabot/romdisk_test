@@ -18,6 +18,7 @@ This program doesn't show anything on screen and will exit immediatly.
 ### Printout format
 
 `Opening /rd_2/test.png : result -1`
+
 `Opening /rd_2/testtest.png : result 3`
 
 The result is the file handle, -1 means the file isn't found.
