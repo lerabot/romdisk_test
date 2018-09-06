@@ -24,6 +24,7 @@ $(TARGET): $(OBJS) romdisk.o
 romdisk.img:
 	$(KOS_GENROMFS) -f romdisk.img -d romdisk
 	$(KOS_GENROMFS) -f asset/rd_test.img -d asset/rd_test
+	$(KOS_GENROMFS) -f asset/rd_test_original.img -d asset/rd_test
 
 	gzip -f -9 asset/rd_test.img
 
